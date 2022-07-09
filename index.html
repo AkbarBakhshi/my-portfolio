@@ -229,7 +229,7 @@
 
 		var contactForm = document.getElementById("contact-form");
 
-		async function handleSubmit(event) {
+		async function handleContactSubmit(event) {
 			event.preventDefault();
 			var status = document.getElementById("contact-form-status");
 			var data = new FormData(event.target);
@@ -256,7 +256,7 @@
 				status.innerHTML = "Oops! There was a problem submitting your form"
 			});
 		}
-		contactForm.addEventListener("submit", handleSubmit)
+		contactForm.addEventListener("submit", handleContactSubmit)
 	</script>
 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
